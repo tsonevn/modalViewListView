@@ -1,0 +1,5 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" backgroundColor="Red" loaded="onLoaded">
+  <StackLayout backgroundColor="PaleGreen">
+    <Button text="show modal" tap="onTap" />
+  </StackLayout>
+</Page>
