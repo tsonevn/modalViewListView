@@ -1,12 +1,18 @@
-<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="onPageLoaded" showingModally="onShowingModally" shownModally="onShownModally" style="height:300px; margin:30px;">
-    <StackLayout>
-        <ListView id="listview" items="{{ myItems }}" itemTap="listViewItemTap" >
-                <ListView.itemTemplate>
-                    <StackLayout orientation="horizontal" class="{{style}}" width="300px">
-                        <Label text="{{ title }}" />
-                    </StackLayout>
-                </ListView.itemTemplate>
-            </ListView>
-    </StackLayout>
-        
+<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="onPageLoaded" showingModally="onShowingModally" shownModally="onShownModally" style=" margin:5px;"> 
+   <GridLayout rows="auto *">
+    <GridLayout row="0"  columns="* * *" rows="auto">
+        <Button fontSize="10" col="0" text="Back" tap="onTap1" />
+        <Label col="1" text="Sample navigation" textWrap="true" />
+        <Button fontSize="10" col="2" text="Next" tap="onTap2" />
+    </GridLayout>
+       <StackLayout row="1">
+                <ListView id="listview" items="{{ myItems }}" itemTap="listViewItemTap" >
+                        <ListView.itemTemplate>
+                            <StackLayout orientation="horizontal" class="{{style}}" width="300px">
+                                <Label text="{{ title }}" />
+                            </StackLayout>
+                        </ListView.itemTemplate>
+                    </ListView>
+            </StackLayout>
+   </GridLayout>
 </Page>

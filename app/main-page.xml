@@ -1,4 +1,4 @@
-<Page xmlns="http://schemas.nativescript.org/tns.xsd" backgroundColor="Red" loaded="onLoaded">
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" backgroundColor="Red" loaded="onLoaded" navigatedTo="pageNavigated">
   <StackLayout backgroundColor="PaleGreen">
     <Button text="show modal" tap="onTap" />
   </StackLayout>
